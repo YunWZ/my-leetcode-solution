@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * 变位词组
@@ -53,6 +54,6 @@ public class Solution10_02 {
 			});
 		}
 
-		return map.values().stream().toList();
+		return map.values().stream().collect(Collectors.toList());
 	}
 }

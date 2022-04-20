@@ -20,7 +20,7 @@ public class Window {
 	}
 
 	private int getTimeIdx(long timestamp) {
-		var timeIdx = timestamp / windowLenghtInMs;
+		long timeIdx = timestamp / windowLenghtInMs;
 		return (int) timeIdx % array.length();
 	}
 

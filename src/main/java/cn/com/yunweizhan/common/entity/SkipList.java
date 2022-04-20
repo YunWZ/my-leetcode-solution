@@ -145,7 +145,7 @@ public class SkipList<T extends Comparable<T>> {
 	}
 
 	private int randomLevel() {
-		var level = 1;
+		int level = 1;
 		while (random.nextBoolean()) {
 			level++;
 		}
