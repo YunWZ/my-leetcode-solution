@@ -73,7 +73,7 @@ public class SkipList<T extends Comparable<T>> {
 
 	private SkipListNode<T>[] searchPreNode(T value) {
 		SkipListNode<T> x = this.header;
-		SkipListNode<T>[] update = new SkipListNode<>[MAX_LEVEL];
+		SkipListNode<T>[] update = new SkipListNode[MAX_LEVEL];
 		for (int i = this.level - 1; i >= 0; i--) {
 			while (x.level[i].forward != null
 					&& compare(x.level[i].forward.value, value) < 0) {
